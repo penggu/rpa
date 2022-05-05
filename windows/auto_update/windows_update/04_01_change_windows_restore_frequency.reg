@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+;
+; Allow restore points to be created every 30 minutes.
+;
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\SystemRestore]
+"SystemRestorePointCreationFrequency"=dword:0000001e
