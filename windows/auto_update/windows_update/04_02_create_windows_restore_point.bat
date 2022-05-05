@@ -22,6 +22,7 @@ Pop-Location
 
 
 REM Step 2: Create Windows Restore Point
+REM ref: https://www.winhelponline.com/blog/create-system-restore-point-script-windows-10-8-7-vista-xp/#systemrestorepointcreationfrequency
 
 REM Method 1: Use PowerShell (worked)
 REM PowerShell -NoProfile -ExecutionPolicy Bypass -Command "& {Start-Process PowerShell -ArgumentList '-NoProfile -ExecutionPolicy Bypass -NoExit -Command "Checkpoint-Computer -Description "(Get-Date) Before Windows Update" -RestorePointType "MODIFY_SETTINGS"; " ' " -Verb RunAs}"
